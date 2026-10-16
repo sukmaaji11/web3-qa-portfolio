@@ -26,21 +26,6 @@ I am expanding my skills into Web3 QA by practicing structured test design, docu
 
 Objective: Evaluate wallet connection flows, user feedback, and error handling in an authorized test environment.
 
-Planned coverage:
-
-- Wallet connection and disconnection
-- Unsupported network handling
-- Rejected connection requests
-- Loading and error states
-- UI consistency across scenarios
-
-Deliverables:
-
-- Test plan
-- Test cases and execution results
-- Reproducible bug reports, if any
-- Supporting evidence
-
 ### Test Results
 
 Tested locally using MetaMask and VS Code Live Server.
@@ -77,6 +62,6 @@ Objective: Demonstrate clear issue descriptions, reproduction steps, expected ve
 
 ## Contact
 
-GitHub: (https://github.com/sukmaaji11)
+GitHub: https://github.com/sukmaaji11
 
 Email: sukmaaji.id@gmail.com
