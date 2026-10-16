@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web3 QA Lab</title>
+  </head>
+  <body>
+    <h1>Web3 QA Lab</h1>
+    <p id="status">Status: Belum terhubung</p>
+
+    <button id="connect">Connect Wallet</button>
+
+    <script>
+      const status = document.getElementById('status');
+      const button = document.getElementById('connect');
+
+      button.addEventListener('click', async () => {
+        if (!window.ethereum) {
+          status.textContent = 'MetaMask tidak terdeteksi';
+          return;
+        }
+
+        try {
+          const accounts = await window.ethereum.request({
+            method: 'eth_requestAccounts',
+          });
+
+          if (accounts.length > 0) {
+            status.textContent = 'Terhubung: ' + accounts[0];
+          } else {
+            status.textContent = 'Tidak ada akun yang diizinkan';
+          }
+        } catch (error) {
+          if (error.code === 4001) {
+            status.textContent = 'Koneksi ditolak pengguna';
+          } else {
+            status.textContent = 'Koneksi gagal';
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

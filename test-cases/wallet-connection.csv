@@ -1,0 +1,4 @@
+test_case_id,title,precondition,steps,expected_result,actual_result,status
+TC-WALLET-001,Connect wallet successfully,MetaMask installed and account available,"Open app; click Connect Wallet; approve in MetaMask",Wallet address is displayed,Website displayed the connected account address after approval,PASS
+TC-WALLET-002,Reject wallet connection,Website permission can be requested,"Click Connect Wallet; reject the MetaMask request",Website displays a clear rejection message,Website displayed Koneksi ditolak pengguna,PASS
+TC-WALLET-003,Switch wallet account,Wallet connected and multiple accounts available,"Switch from Account 1 to Account 2; observe website",Website displays the currently selected account address,Website address changed to match Account 2,PASS

@@ -22,7 +22,7 @@ I am expanding my skills into Web3 QA by practicing structured test design, docu
 
 ### 1. Wallet Connection Testing
 
-**Status:** Planned
+**Status:** Completed — initial test cases
 
 Objective: Evaluate wallet connection flows, user feedback, and error handling in an authorized test environment.
 
@@ -40,6 +40,20 @@ Deliverables:
 - Test cases and execution results
 - Reproducible bug reports, if any
 - Supporting evidence
+
+### Test Results
+
+Tested locally using MetaMask and VS Code Live Server.
+
+| Test Case     | Scenario                     | Result |
+| ------------- | ---------------------------- | ------ |
+| TC-WALLET-001 | Successful wallet connection | PASS   |
+| TC-WALLET-002 | User rejects connection      | PASS   |
+| TC-WALLET-003 | Switch wallet account        | PASS   |
+
+**Environment:** Local application using VS Code Live Server.
+
+**Note:** Results apply only to the demo application and scenarios executed.
 
 ### 2. API Testing
 
@@ -63,6 +77,6 @@ Objective: Demonstrate clear issue descriptions, reproduction steps, expected ve
 
 ## Contact
 
-GitHub: [Your GitHub Profile]
+GitHub: (https://github.com/sukmaaji11)
 
-Email: [Your Professional Email]
+Email: sukmaaji.id@gmail.com
